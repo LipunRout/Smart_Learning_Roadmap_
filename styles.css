@@ -1,0 +1,217 @@
+/* Global Styles */
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Copperplate, Papyrus, fantasy;
+  }
+  
+  /* Centering the Content */
+  body {
+      background: url('bg1.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+      min-height: 100vh;
+      animation: fadeIn 1s ease-in-out;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  /* Make Container Invisible */
+  .container {
+      width: 90%;
+      max-width: 1200px;
+      padding: 20px;
+      background: transparent; /* Fully transparent */
+      border-radius: 10px;
+      margin: auto;
+      animation: fadeIn 1s ease-out; 
+  }
+  
+  /* Headings */
+  h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+  }
+  
+  /* Buttons */
+  button {
+      background: #ff7b00;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      margin: 10px;
+      border-radius: 8px;
+      transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover {
+      background: #ff4500;
+      transform: scale(1.1);
+  }
+  
+  /* Navigation Links */
+  .nav-link {
+      display: inline-block;
+      background: #008080;
+      padding: 12px 18px;
+      text-decoration: none;
+      color: white;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      transition: 0.3s;
+  }
+  
+  .nav-link:hover {
+      background: #005f5f;
+  }
+  
+  /* Field Selection Page */
+  .field-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 30px;
+  }
+  
+  .field-option {
+      width: 300px;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 1.3rem;
+      cursor: pointer;
+      transition: 0.3s;
+  }
+  
+  .field-option:hover {
+      background: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Job List */
+  #job-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+  }
+
+  
+  .job-option {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 12px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+     
+  }
+  
+  .job-option:hover {
+      background: #d68910;
+  }
+  
+  /* Roadmap Section */
+  #roadmap-steps {
+      list-style: none;
+      margin-top: 20px;
+  }
+  
+  #roadmap-steps li {
+      background: rgb(0, 0, 0);
+      color: white;
+      padding: 12px;
+      margin: 8px 0;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      
+  }
+  #roadmap-steps li:hover{
+      background-color: #d68910;
+
+  }
+
+  
+  /* Fade-in animation */
+@keyframes fadeIn {
+      from {
+          opacity: 0;
+      }
+      to {
+          opacity: 1;
+      }
+  }
+  
+  /* Slide-in animation */
+  @keyframes slideIn {
+      from {
+          transform: translateY(50px);
+          opacity: 0;
+      }
+      to {
+          transform: translateY(0);
+          opacity: 1;
+      }
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 1024px) {
+      body {
+          background: url('bg2.png') no-repeat center center fixed;
+          background-size: cover;
+      }
+      .container {
+            width: 95%;
+            padding: 15px;
+        }
+    
+        .field-option, .job-option, button {
+            width: 100%;
+        }
+  }
+  
+  @media screen and (max-width: 768px) {
+      body {
+          background: url('bg2.png') no-repeat center center fixed;
+          background-size: cover;
+      }
+  
+      h1 {
+          font-size: 2rem;
+      }
+  
+      .container {
+          width: 95%;
+          padding: 15px;
+      }
+  
+      .field-option, .job-option, button {
+          width: 100%;
+      }
+  }
+  
+  @media screen and (max-width: 480px) {
+      body {
+          background: url('bg2.png') no-repeat center center fixed;
+          background-size: cover;
+      }
+      .container {
+            width: 95%;
+            padding: 15px;
+        }
+    
+        .field-option, .job-option, button {
+            width: 100%;
+        }
+  
+      h1 {
+          font-size: 1.8rem;
+      }
+  }
+  
